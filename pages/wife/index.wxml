@@ -1,0 +1,43 @@
+<!--pages/home/index.wxml-->
+
+<view class='title'>
+  老婆生成器
+</view>
+<view class='line-layout'>
+  <view class='label-text'>身高:</view>
+  <view class='info-text'>{{height}}</view>
+</view>
+<view class='line-layout'>
+  <view class='label-text'>体重:</view>
+  <view class='info-text'>{{weight}}</view>
+</view>
+<view class='line-layout'>
+  <view class='label-text'>CUP:</view>
+  <view class='info-text'>{{cup}}</view>
+</view>
+<view class='line-layout'>
+  <view class='label-text'>肤色:</view>
+  <view class='info-text'>{{skin}}</view>
+</view>
+<view class='line-layout'>
+  <view class='label-text'>发型:</view>
+  <view class='info-text'>{{hair}}</view>
+</view>
+<view class='line-layout'>
+  <view class='label-text'>发色:</view>
+  <view class='info-text' style='background-color:{{hairColor}}'>{{hairColor}}</view>
+</view>
+<view class='line-layout'>
+  <view class='label-text'>瞳色:</view>
+  <view class='info-text' style='background-color:{{eyes}}'>{{eyes}}</view>
+</view>
+<view class='line-layout'>
+  <view class='label-text'>属性:</view>
+  <view class='info-text'>{{attribute}}</view>
+</view>
+<view class='line-layout'>
+  <view class='label-text'>性格:</view>
+  <view class='info-text'>{{character}}</view>
+</view>
+<button class='start-btn' bindtap='startGenerator'>一键生成老婆</button>
+<button wx:if='{{canShare}}' class='start-btn' bindtap='shareImage'>生成图片</button>

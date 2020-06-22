@@ -1,0 +1,7 @@
+<!--pages/home/index.wxml-->
+
+<view class='title'>
+  AI智能生成器
+</view>
+<button class='start-btn' bindtap='startGeneratorWife'>老婆生成器</button>
+<button class='start-btn' bindtap='startGeneratorHusband'>老公生成器</button>
